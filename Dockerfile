@@ -8,7 +8,6 @@ COPY . .
 
 RUN GOOS=linux GOARCH=amd64 go build -o hello-world-compiled .
 
-# FROM busybox:1.25-uclibc
 FROM hello-world
 
 WORKDIR /usr/src/app
